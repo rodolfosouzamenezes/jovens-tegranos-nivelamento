@@ -1,0 +1,95 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #2E0962;
+    --secondary-color: #C90E67;
+    --background-color: #FFFFFF;
+    --container-size: 1224px;
+    --card-title-background: #CACACA;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: var(--container-size);
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+}
+
+.menu__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--container-size);
+    padding: 24px 48px;
+}
+
+.menu__logo svg {
+    width: auto;
+    height: auto;
+    color: var(--primary-color);
+    transition: ease-in .2s all;
+}
+
+.menu__logo:hover svg {
+    color: var(--secondary-color);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+.menu__item a i {
+    font-size: 28px;
+    color: var(--primary-color);
+    transition: ease-in .2s color;
+}
+
+.menu__item:hover a i {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Design Responsivo */
+@media only screen and (max-width: 670px) {
+    .menu {
+        width: 120px;
+    }
+
+    .menu__logo svg {
+        width: 180px;
+    }
+
+    .menu__item a i {
+        font-size: 18px;
+    }
+}
