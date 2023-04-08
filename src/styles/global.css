@@ -21,8 +21,12 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: normal;
+}
+
+textarea:focus, input:focus{
+    outline: var(--secondary-color);
 }
 
 .container {
@@ -36,7 +40,7 @@ h2 {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 24px;
+    margin-bottom: 60px;
 }
 
 .menu__content {
