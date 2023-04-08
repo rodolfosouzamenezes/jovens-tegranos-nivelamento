@@ -1,4 +1,4 @@
-loadPokemon();
+// loadPokemon();
 
 function loadPokemon(){
     fetch('https://6283929f92a6a5e462260498.mockapi.io/pokemon')
