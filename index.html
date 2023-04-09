@@ -19,9 +19,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/src/styles/index.css">
 
-  <!-- JS -->
-  <script src="/src/js/index.js"></script>
-
   <!-- Font Awesome - Icons -->
   <script src="https://kit.fontawesome.com/a21c1857b7.js" crossorigin="anonymous"></script>
 </head>
@@ -51,27 +48,28 @@
         </svg>
       </a>
 
+      <!-- Lista das minha Rede Sociais   -->
       <ul class="menu__links">
-        <li class="menu__links_item">
-          <a href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
+        <li>
+          <a class="menu__links_item" href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
 
-        <li class="menu__links_item">
-          <a href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
+        <li>
+          <a class="menu__links_item" href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
             <i class="fab fa-whatsapp-square"></i>
           </a>
         </li>
 
-        <li class="menu__links_item">
-          <a href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
+        <li>
+          <a class="menu__links_item" href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
             <i class="fas fa-envelope-square"></i>
           </a>
         </li>
 
-        <li class="menu__links_item">
-          <a href="https://github.com/rodolfosouzamenezes" target="_blank">
+        <li>
+          <a class="menu__links_item" href="https://github.com/rodolfosouzamenezes" target="_blank">
             <i class="fab fa-github-square"></i>
           </a>
         </li>
@@ -80,7 +78,7 @@
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero__container">
       <div class="hero__headline">
         <h1>Nivelamento Jovens Tegranos</h1>
         <h2>
@@ -96,81 +94,86 @@
       <img src="./src/assets/logo-tegra-alternative.webp" alt="Logo Tegra Alternativo">
     </section>
 
-    <section class="list_challenges" id="chalanges">
+    <section class="challenges__container" id="chalanges">
       <h1>Lista de Desafios de Nivelamento</h1>
       <h2>
         Confira a lista completa de desafios realizados durante o Nivelamento Jovens Tegranos!
       </h2>
-      <div class="search__container">
-        <input class="search__field" placeholder="Pesquisar Desafio" id="search__field" onkeyup="searchPokemon()"
-          type="text" name="search pokemon" />
-      </div>
-      <div class="card__container">
 
+      <div class="search__container">
+        <input 
+          id="search__field" 
+          class="search__field" 
+          placeholder="Pesquisar Desafio" 
+          type="text" 
+        />
+      </div>
+
+      <div class="card__container" id="challenge__list">
+        <!-- Os desafios serão inseridos aqui -->
       </div>
     </section>
   </main>
 
   <footer class="footer__container">
     <div class="footer__content">
-      <div class="footer__social_area">
+      <div class="footer__info">
         <a href="/" class="footer__logo">
-          <!-- Logo Rodolfo Menezes + Tegra -->
-          <img src="./src/assets/logo.svg" alt="Logo Rodolfo Menezes + Tegra">
+          <img src="./src/assets/logo.webp" alt="Logo Rodolfo Menezes + Tegra">
         </a>
         <ul class="footer__social">
-          <li class="footer__social_item">
-            <a href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
+          <li>
+            <a class="footer__social_item" href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
 
-          <li class="footer__social_item">
-            <a href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
+          <li>
+            <a class="footer__social_item" href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
               <i class="fab fa-whatsapp-square"></i>
             </a>
           </li>
 
-          <li class="footer__social_item">
-            <a href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
+          <li>
+            <a class="footer__social_item" href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
               <i class="fas fa-envelope-square"></i>
             </a>
           </li>
 
-          <li class="footer__social_item">
-            <a href="https://github.com/rodolfosouzamenezes" target="_blank">
+          <li>
+            <a class="footer__social_item" href="https://github.com/rodolfosouzamenezes" target="_blank">
               <i class="fab fa-github-square"></i>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer__links_area">
+      <div class="footer__links">
         <div class="footer__links_col">
           <h3>Tegra</h3>
           <ul>
             <li>
-              <a href="https://tegra.com.br" target="_blank">
+              <a class="footer__links_item" href="https://tegra.com.br" target="_blank">
                 Site da Empresa
               </a>
             </li>
             <li>
-              <a href="https://tracotech.com.br/new-dev/" target="_blank">
+              <a class="footer__links_item" href="https://tracotech.com.br/new-dev/" target="_blank">
                 NewDev()
               </a>
             </li>
             <li>
-              <a href="https://tracotech.com.br" target="_blank">
+              <a class="footer__links_item" href="https://tracotech.com.br" target="_blank">
                 Traco Tech
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/tegra-ltda/" target="_blank">
+              <a class="footer__links_item" href="https://www.linkedin.com/company/tegra-ltda/" target="_blank">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/tegrasoftware/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+              <a class="footer__links_item" href="https://www.instagram.com/tegrasoftware/?igshid=YmMyMTA2M2Y%3D" target="_blank">
                 Instagram
               </a>
             </li>
@@ -180,22 +183,22 @@
           <h3>Contatos</h3>
           <ul>
             <li>
-              <a href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
+              <a class="footer__links_item" href="https://wa.me/qr/QIRQKOMTWCKPM1" target="_blank">
                 WhatsApp
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
+              <a class="footer__links_item" href="https://www.linkedin.com/in/rodolfo-souza-menezes/" target="_blank">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/rodolfosouzamenezes" target="_blank">
+              <a class="footer__links_item" href="https://github.com/rodolfosouzamenezes" target="_blank">
                 GitHub
               </a>
             </li>
             <li>
-              <a href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
+              <a class="footer__links_item" href="mailto:rodolfo.sz.menezes@gmail.com" target="_blank">
                 Gmail
               </a>
             </li>
@@ -205,12 +208,12 @@
           <h3>Links Úteis</h3>
           <ul>
             <li>
-              <a href="/">
+              <a class="footer__links_item" href="/">
                 Início
               </a>
             </li>
             <li>
-              <a href="#chalanges">
+              <a class="footer__links_item" href="/#chalanges">
                 Meus Desafios
               </a>
             </li>
@@ -219,6 +222,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- JS -->
+  <script src="/src/js/index.js"></script>
 </body>
 
 </html>

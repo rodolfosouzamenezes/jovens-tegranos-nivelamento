@@ -6,7 +6,7 @@ Este é meu o Projeto de Nivelamento do Programa Jovens Tegranos, uma iniciativa
 
 __Diferenciais do meu Projeto__
 
-- Listagem dos desafios
+- Listagem dos desafios (com simulação de busca de API)
 
 - Sistema de pesquisa de desafos
 

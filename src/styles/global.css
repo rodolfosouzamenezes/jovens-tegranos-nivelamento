@@ -56,7 +56,7 @@ textarea:focus, input:focus{
     width: auto;
     height: auto;
     color: var(--primary-color);
-    transition: ease-in .2s all;
+    transition: ease-in .2s color;
 }
 
 .menu__logo:hover svg {
@@ -71,13 +71,13 @@ textarea:focus, input:focus{
     width: 160px;
 }
 
-.menu__links_item a i {
+.menu__links_item i {
     font-size: 28px;
     color: var(--primary-color);
     transition: ease-in .2s color, ease-in .2s transform;
 }
 
-.menu__links_item:hover a i {
+.menu__links_item:hover i {
     color: var(--secondary-color);
     transform: scale(1.1);
 }
@@ -101,6 +101,10 @@ textarea:focus, input:focus{
     justify-content: space-between;
 }
 
+.footer__logo img {
+    width: 230px
+}
+
 .footer__social {
     display: flex;
     flex-direction: row;
@@ -110,17 +114,17 @@ textarea:focus, input:focus{
     padding-top: 20px;
 }
 
-.footer__social a i {
+.footer__social_item i {
     font-size: 22px;
     color: #FFFFFF;
     transition: ease-in .2s transform;
 }
 
-.footer__social a i:hover {
+.footer__social_item:hover i {
     transform: scale(1.1);
 }
 
-.footer__links_area {
+.footer__links {
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -135,7 +139,7 @@ textarea:focus, input:focus{
     margin-bottom: 10px;
 }
 
-.footer__links_col ul li a {
+.footer__links_item {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 14px;
@@ -143,14 +147,18 @@ textarea:focus, input:focus{
     transition: ease-in .2s font-weight;
 }
 
-.footer__links_col ul li a:hover {
+.footer__links_item:hover {
     font-weight: 400;
 }
 
 /* Design Responsivo */
 @media only screen and (max-width: 900px) {
-    .footer__links_area {
+    .footer__links {
         width: 60%;
+    }
+
+    .footer__container {
+        margin-top: 10vw;
     }
 }
 
@@ -160,14 +168,14 @@ textarea:focus, input:focus{
         align-items: center;
     }
 
-    .footer__social_area {
+    .footer__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 40px 0 60px;
     }
 
-    .footer__links_area {
+    .footer__links {
         width: 80%;
     }
 }
@@ -185,7 +193,7 @@ textarea:focus, input:focus{
         font-size: 18px;
     }
 
-    .footer__links_area {
+    .footer__links {
         width: 100%;
     }
 }
@@ -203,7 +211,7 @@ textarea:focus, input:focus{
         font-size: 14px;
     }
 
-    .footer__links_area {
+    .footer__links {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(2, 1fr);

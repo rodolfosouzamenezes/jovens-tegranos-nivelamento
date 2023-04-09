@@ -1,36 +1,45 @@
-// loadPokemon();
+const challengeList = document.getElementById('challenge__list');
+const searchField = document.getElementById('search__field');
+const cards = document.getElementsByClassName('card');
 
-function loadPokemon(){
-    fetch('https://6283929f92a6a5e462260498.mockapi.io/pokemon')
-    .then(response => response.json())
-    .then(data => {
-        const pokemons = data.map((item) => pokemon(item))
-        document.querySelector('.card__container').innerHTML = pokemons.join('')
-    });
+function loadChallenges() {
+    // Simulando uma chamada de uma API com JSON
+    fetch('/src/desafios/challenges.json')
+        .then(response => response.json())
+        .then(data => {
+            for (const challenge of data) {
+                const card = `
+                    <a class="card" href="/src/desafios/${challenge.id}/">
+                        <p class="card__number">#${challenge.id}</p>
+                        <div class="card__text">
+                            <h2>${challenge.title}</h2>
+                            <p>${challenge.description}</p>
+                        </div>
+                    </a>
+                `;
+
+                // Insere o card como o último da lista
+                challengeList.insertAdjacentHTML('beforeend', card);
+            }
+        });
 }
 
-function pokemon(item){
-    return `
-    <a class="card" style="background:${item.color}" href="/characteristics.html?pokemon=${item.avatar}">
-        <img class="card__image" src="/src/images/stat/stat-${item.avatar}.png">
-        <div class="card__title">${item.name}</div>
-    </a>
-    `;
-}
+function searchChallenge() {
+    const input = searchField.value.toLowerCase();
+    for (const card of cards) {
+        const number = card.querySelector('.card__number').textContent.toLowerCase();
+        const title = card.querySelector('.card__text h2').textContent.toLowerCase();
 
-function searchPokemon() {
-    let input = document.getElementById('search__field').value
-    input = input.toLowerCase();
-    let card = document.getElementsByClassName('card__title');
-      
-    for (i = 0; i < card.length; i++) { 
-        if (!card[i].innerHTML.toLowerCase().includes(input)) {
-            card[i].parentNode.style.display="none";
-        }
-        else {
-            card[i].parentNode.style.display="list-item";                 
-        }
+        const matchNumber = number.includes(input);
+        const matchTitle = title.includes(input);
+        
+        //Exibe apenas os cards que tenham o título ou número iguais ao valor inserido no input
+        card.style.display = matchNumber || matchTitle ? 'flex' : 'none';
     }
 }
 
+//Exibe  os desafios na página 
+loadChallenges();
 
+//Listener para o evento de mudança do input de busca
+searchField.addEventListener('input', searchChallenge);
