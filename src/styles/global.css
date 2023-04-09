@@ -181,16 +181,12 @@ textarea:focus, input:focus{
 }
 
 @media only screen and (max-width: 670px) {
-    .menu__links {
-        width: 120px;
-    }
-
     .menu__logo svg {
-        width: 160px;
+        width: 180px;
     }
 
-    .menu__links_item a i {
-        font-size: 18px;
+    .menu__links {
+        width: 140px;
     }
 
     .footer__links {
@@ -199,16 +195,12 @@ textarea:focus, input:focus{
 }
 
 @media only screen and (max-width: 490px) {
-    .menu__links {
-        width: 60px;
-    }
-
     .menu__logo svg {
-        width: 140px;
+        width: 160px;
     }
 
-    .menu__links_item a i { 
-        font-size: 14px;
+    .menu__links {
+        width: 120px;
     }
 
     .footer__links {
@@ -217,5 +209,19 @@ textarea:focus, input:focus{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 80px;
         row-gap: 40px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .menu__logo svg {
+        width: 140px;
+    }
+
+    .menu__links {
+        width: 80px;
+    }
+
+    .menu__links_item i {
+        font-size: 18px;
     }
 }
