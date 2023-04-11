@@ -17,7 +17,7 @@
   <link rel="icon" type="imagem/png" href="/src/assets/favicon/favicon.ico" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/challange.css">
 
   <!-- Font Awesome - Icons -->
   <script src="https://kit.fontawesome.com/a21c1857b7.js" crossorigin="anonymous"></script>
@@ -78,48 +78,127 @@
   </header>
 
   <main class="container">
-    <section class="hero__container">
-      <div class="hero__headline">
-        <h1>Nivelamento Jovens Tegranos</h1>
-        <h2>
-          Finalizei o curso NewDev() da Traco Tech e agora estou realizando o processo de nivelamento do Programa Jovens
-          Tegranos, da empresa Tegra Soluções Digitais!
-        </h2>
-        <div class="hero__button">
-          <a href="#chalanges">
-            VER OS DESAFIOS
+    <section class="info__container">
+      <h2>Desafio 01</h2>
+      <h1>Terreno</h1>
+      <p>
+        Fazer um programa para ler as medidas da largura e comprimento de um
+        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
+        Em seguida, o programa
+        deve mostrar o valor da área do terreno, bem como o valor do preço do
+        terreno, ambos com duas casas decimais, conforme exemplo.
+      </p>
+
+      <ul class="info__buttons">
+        <li>
+          <a class="info__buttons_item" href="/#challenges">
+            <i class="fas fa-list-alt"></i>
           </a>
+        </li>
+        <li>
+          <a class="info__buttons_item" href="https://github.com/rodolfosouzamenezes" target="_blank">
+            <i class="far fa-caret-square-left"></i>
+          </a>
+        </li>
+        <li>
+          <a class="info__buttons_item" href="https://github.com/rodolfosouzamenezes" target="_blank">
+            <i class="far fa-caret-square-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      <table class="table__container">
+        <thead>
+          <tr>
+            <th>Classificação</th>
+            <th>Glicose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Normal</td>
+            <td>Até 100 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Elevado</td>
+            <td>Entre 100 e 140 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Diabetes</td>
+            <td>Maior que 140 mg/dl</td>
+          </tr>
+        <tbody>
+      </table>
+
+      <div class="examples__container">
+        <input type="checkbox" id="example-checkbox">
+        <label class="examples__title" for="example-checkbox">Exemplos</label>
+        <div class="examples__content">
+          <div class="example">
+            <div class="example__inputs">
+              <h2>Entrada</h2>
+              <p>Largura do terreno: 10.0 </p>
+              <p>Comprimento do terreno: 30.0 </p>
+              <p>Valor do metro quadrado: 200.00 </p>
+            </div>
+            <div class="example__outputs">
+              <h2>Saída</h2>
+              <p>Área do terreno = 300.00 </p>
+              <p>reço do terreno = 60000.00</p>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example__inputs">
+              <h2>Entrada</h2>
+              <p>Largura do terreno: 10.0 </p>
+              <p>Comprimento do terreno: 30.0 </p>
+              <p>Valor do metro quadrado: 200.00 </p>
+            </div>
+            <div class="example__outputs">
+              <h2>Saída</h2>
+              <p>Área do terreno = 300.00 </p>
+              <p>reço do terreno = 60000.00</p>
+            </div>
+          </div>
         </div>
       </div>
-      <img src="./src/assets/logo-tegra-alternative.webp" alt="Logo Tegra Alternativo">
     </section>
 
-    <section class="challenges__container" id="chalanges">
-      <h1>Lista de Desafios de Nivelamento</h1>
-      <h2>
-        Confira a lista completa de desafios realizados durante o Nivelamento Jovens Tegranos!
-      </h2>
+    <form>
+      <ul class="form__container">
+        <li>
+          <label>Largura do terreno em metros</label>
+          <input type="email" name="field3" class="field-long" />
+        </li>
+        <li>
+          <label>Comprimento do terreno em metros</label>
+          <input type="email" name="field3" class="field-long" />
+        </li>
+        <li>
+          <label>Valor do metro quadrado</label>
+          <input type="email" name="field3" class="field-long" placeholder="Ex: 30" />
+        </li>
+        <li>
+          <label>Temperatura em qual escala (C/F)</label>
+          <select name="field4" class="field-select">
+            <option value="Advertise">Celsius (C)</option>
+            <option value="Partnership">Fahrenheit (F)</option>
+          </select>
+        </li>
+        <li>
+          <input type="submit" value="Enviar" />
+        </li>
+      </ul>
+    </form>
 
-      <div class="search__container">
-        <input 
-          id="search-field" 
-          class="search__field" 
-          placeholder="Pesquisar Desafio" 
-          type="text" 
-        />
-      </div>
 
-      <div class="card__container" id="challenge-list">
-        <!-- Os desafios serão inseridos aqui -->
-      </div>
-    </section>
   </main>
 
   <footer class="footer__container">
     <div class="footer__content">
       <div class="footer__info">
         <a href="/" class="footer__logo">
-          <img src="./src/assets/logo.webp" alt="Logo Rodolfo Menezes + Tegra">
+          <img src="/src/assets/logo.webp" alt="Logo Rodolfo Menezes + Tegra">
         </a>
         <ul class="footer__social">
           <li>
@@ -173,7 +252,8 @@
               </a>
             </li>
             <li>
-              <a class="footer__links_item" href="https://www.instagram.com/tegrasoftware/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+              <a class="footer__links_item" href="https://www.instagram.com/tegrasoftware/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank">
                 Instagram
               </a>
             </li>
@@ -224,7 +304,7 @@
   </footer>
 
   <!-- JS -->
-  <script src="/src/js/index.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

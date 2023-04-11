@@ -1,15 +1,15 @@
-const challengeList = document.getElementById('challenge__list');
-const searchField = document.getElementById('search__field');
+const challengeList = document.getElementById('challenge-list');
+const searchField = document.getElementById('search-field');
 const cards = document.getElementsByClassName('card');
 
 function loadChallenges() {
     // Simulando uma chamada de uma API com JSON
-    fetch('/src/desafios/challenges.json')
+    fetch('/challenges/index.json')
         .then(response => response.json())
         .then(data => {
             for (const challenge of data) {
                 const card = `
-                    <a class="card" href="/src/desafios/${challenge.id}/">
+                    <a class="card" href="/challenge.html?challange=${challenge.id}">
                         <p class="card__number">#${challenge.id}</p>
                         <div class="card__text">
                             <h2>${challenge.title}</h2>
