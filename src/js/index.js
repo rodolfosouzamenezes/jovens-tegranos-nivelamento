@@ -1,3 +1,4 @@
+// Selecionar elementos do DOM
 const challengeList = document.getElementById('challenge-list');
 const searchField = document.getElementById('search-field');
 const cards = document.getElementsByClassName('card');
@@ -9,7 +10,7 @@ function loadChallenges() {
         .then(data => {
             for (const challenge of data) {
                 const card = `
-                    <a class="card" href="/challenge.html?challange=${challenge.id}">
+                    <a class="card" href="/challenges/${challenge.id}/">
                         <p class="card__number">#${challenge.id}</p>
                         <div class="card__text">
                             <h2>${challenge.title}</h2>

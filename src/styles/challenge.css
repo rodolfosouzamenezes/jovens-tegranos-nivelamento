@@ -1,16 +1,21 @@
 @import url('global.css');
 
-.info__container {
+.disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+#info-container {
   position: relative;
   padding-bottom: 40px;
   width: 100%;
 }
 
-.info__container h1 {
+#info-container h1 {
   font-size: 42px;
 }
 
-.info__container h2 {
+#info-container h2 {
   font-size: 18px;
   font-weight: 500;
 }
@@ -76,11 +81,9 @@
   border-top-right-radius: 8px;
 }
 
-
 .table__container tr:nth-child(even) {
   background: #f8f5fd;
 }
-
 
 #example-checkbox {
   position: absolute;
@@ -160,7 +163,6 @@
   padding-bottom: 1rem;
 }
 
-
 .form__container {
 	max-width: 100%;
 }
@@ -175,6 +177,7 @@
   font-size: 1.2rem;
 	font-weight: bold;
 }
+
 .form__container input,
 .form__container select {
 	box-sizing: border-box;
@@ -213,6 +216,32 @@
   font-weight: bold;
   border-radius: 10px;
 }
+
 .form__container input[type=submit]:hover {
-	background: var(--primary-color);
+	background-color: var(--secondary-color);
+  transition: ease-in .2s opacity;
+}
+
+.form__container input[type=submit]:hover {
+  opacity: .85;
+}
+
+.result__container {
+  flex-direction: column;
+  background-color: #FFF5FF;
+  padding: 16px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  font-size: 16px;  
+  display: none;
+}
+
+.result__container h2 {
+  font-weight: bold;
+}
+
+.result__inputs,
+.result__outputs {
+  padding-top: 16px;
 }
