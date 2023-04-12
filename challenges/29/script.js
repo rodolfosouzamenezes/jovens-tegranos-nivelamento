@@ -73,8 +73,8 @@ sendButton.addEventListener('click', function (event) {
       pos = 9;
   }
 
-  resultado = sum % 11 < 2 ? 0 : 11 - sum % 11;
-  if (resultado != digitos.charAt(1)) {isValid = false;}
+  result = sum % 11 < 2 ? 0 : 11 - sum % 11;
+  if (result != digitos.charAt(1)) {isValid = false;}
 
   const resultHTML = `
     <h2>RESULTADO</h2>
