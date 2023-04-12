@@ -29,10 +29,7 @@ sendButton.addEventListener('click', function (event) {
     isValid = false;
   }
 
-  let cnpjLength = cnpjNumbers.length - 2;
-
-
-  // Verifica números repitidos
+  // Verificando se exitem valores iguais
   if (cnpjNumbers == "00000000000000" ||
     cnpjNumbers == "11111111111111" ||
     cnpjNumbers == "22222222222222" ||
@@ -46,8 +43,10 @@ sendButton.addEventListener('click', function (event) {
     isValid = false;
   }
 
+  // Validando os Digitos Verificadores
+  let cnpjLength = cnpjNumbers.length - 2;
   let numbers = cnpjNumbers.substring(0, cnpjLength);
-  let digitos = cnpjNumbers.substring(cnpjLength);
+  let digits = cnpjNumbers.substring(cnpjLength);
 
   let sum = 0;
   let pos = cnpjLength - 7;
@@ -59,7 +58,7 @@ sendButton.addEventListener('click', function (event) {
   }
 
   let resultado = sum % 11 < 2 ? 0 : 11 - sum % 11;
-  if (resultado != digitos.charAt(0)) {isValid = false;}
+  if (resultado != digits.charAt(0)) {isValid = false;}
 
   cnpjLength = cnpjLength + 1;
   numbers = cnpjNumbers.substring(0, cnpjLength);
@@ -74,7 +73,9 @@ sendButton.addEventListener('click', function (event) {
   }
 
   result = sum % 11 < 2 ? 0 : 11 - sum % 11;
-  if (result != digitos.charAt(1)) {isValid = false;}
+  if (result != digits.charAt(1)) {
+    isValid = false;
+  }
 
   const resultHTML = `
     <h2>RESULTADO</h2>
