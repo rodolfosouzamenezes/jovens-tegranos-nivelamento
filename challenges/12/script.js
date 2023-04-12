@@ -51,7 +51,7 @@ sendButton.addEventListener('click', function (event) {
       <h3>Saída</h3>
       ${delta < 0 ? `<p>Esta equação não possui raízes reais</p>` : `
         <p>X1: ${x1.toFixed(4)}</p>
-        <p>X1: ${x2.toFixed(4)}</p>
+        <p>X2: ${x2.toFixed(4)}</p>
       `}
     </div>
   `;
