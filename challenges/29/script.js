@@ -20,7 +20,7 @@ sendButton.addEventListener('click', function (event) {
   let cnpj = cnpjInput.value;
 
   let isValid = true;
-  
+
   // Remove caracteres não numéricos
   let cnpjNumbers = cnpj.replace(/[^\d]+/g, '');
 
@@ -29,31 +29,52 @@ sendButton.addEventListener('click', function (event) {
     isValid = false;
   }
 
-  // Valida primeiro dígito verificador
-  let sum = 0;
-  for (let i = 0; i < 12; i++) {
-    sum += parseInt(cnpjNumbers.charAt(i)) * (11 - i);
-  }
-  let rest = (sum * 10) % 11;
-  if (rest === 10 || rest === 11) {
-    rest = 0;
-  }
-  if (rest !== parseInt(cnpjNumbers.charAt(12))) {
+  let cnpjLength = cnpjNumbers.length - 2;
+
+
+  // Verifica números repitidos
+  if (cnpjNumbers == "00000000000000" ||
+    cnpjNumbers == "11111111111111" ||
+    cnpjNumbers == "22222222222222" ||
+    cnpjNumbers == "33333333333333" ||
+    cnpjNumbers == "44444444444444" ||
+    cnpjNumbers == "55555555555555" ||
+    cnpjNumbers == "66666666666666" ||
+    cnpjNumbers == "77777777777777" ||
+    cnpjNumbers == "88888888888888" ||
+    cnpjNumbers == "99999999999999") {
     isValid = false;
   }
 
-  // Valida segundo dígito verificador
+  let numbers = cnpjNumbers.substring(0, cnpjLength);
+  let digitos = cnpjNumbers.substring(cnpjLength);
+
+  let sum = 0;
+  let pos = cnpjLength - 7;
+
+  for (i = cnpjLength; i >= 1; i--) {
+    sum += numbers.charAt(cnpjLength - i) * pos--;
+    if (pos < 2)
+      pos = 9;
+  }
+
+  let resultado = sum % 11 < 2 ? 0 : 11 - sum % 11;
+  if (resultado != digitos.charAt(0)) {isValid = false;}
+
+  cnpjLength = cnpjLength + 1;
+  numbers = cnpjNumbers.substring(0, cnpjLength);
+
   sum = 0;
-  for (let i = 0; i < 13; i++) {
-    sum += parseInt(cnpjNumbers.charAt(i)) * (12 - i);
+  pos = cnpjLength - 7;
+
+  for (i = cnpjLength; i >= 1; i--) {
+    sum += numbers.charAt(cnpjLength - i) * pos--;
+    if (pos < 2)
+      pos = 9;
   }
-  rest = (sum * 10) % 11;
-  if (rest === 10 || rest === 11) {
-    rest = 0;
-  }
-  if (rest !== parseInt(cnpjNumbers.charAt(13))) {
-    isValid = false;
-  }
+
+  resultado = sum % 11 < 2 ? 0 : 11 - sum % 11;
+  if (resultado != digitos.charAt(1)) {isValid = false;}
 
   const resultHTML = `
     <h2>RESULTADO</h2>
@@ -75,8 +96,3 @@ sendButton.addEventListener('click', function (event) {
   resultDiv.innerHTML = resultHTML;
   resultDiv.style.display = "flex";
 });
-
-
-
-
-
