@@ -245,3 +245,41 @@
 .result__outputs {
   padding-top: 16px;
 }
+
+@media only screen and (max-width: 768px) {
+  .info__buttons_item i {
+    font-size: 30px;
+  }
+  
+  #info-container h1 {
+    font-size: 30px;
+  }
+  
+  .table__container td {
+    font-size: 12px;
+  }
+  
+  .table__container thead th {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .table__container td {
+    font-size: 10px;
+  }
+  
+  .table__container thead th {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .table__container td {
+    font-size: 8px;
+  }
+  
+  .table__container thead th {
+    font-size: 8px;
+  }
+}
