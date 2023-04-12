@@ -47,7 +47,7 @@ sendButton.addEventListener('click', function (event) {
       <h3>Saída</h3>
       <p>Novo salário = R$ ${newSalary.toFixed(2)}</p>
       <p>Aumento = R$ ${increase.toFixed(2)}</p>
-      <p>Porcentagem = ${percentage}%</p>
+      <p>Porcentagem = ${percentage.toString().padStart(2, '0')}%</p>
     </div>
   `;
 
