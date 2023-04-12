@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Titulo e Favicons -->
-  <title>Nivelamento Jovens Tegranos | Desafio 01</title>
+  <title>Nivelamento Jovens Tegranos | Desafio 25</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
@@ -79,14 +79,11 @@
 
   <main class="container">
     <section id="info-container">
-      <h2>Desafio 01</h2>
-      <h1>Terreno</h1>
+      <h2>Desafio 25</h2>
+      <h1>Signos</h1>
       <p>
-        Fazer um programa para ler as medidas da largura e comprimento de um
-        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa
-        deve mostrar o valor da área do terreno, bem como o valor do preço do
-        terreno, ambos com duas casas decimais, conforme exemplo.
+        Receber valores numéricos para o dia e o mês de nascimento de uma pessoa; Exibir o signo da pessoa de acordo com
+        os seguintes critérios:
       </p>
 
       <ul class="info__buttons">
@@ -96,16 +93,75 @@
           </a>
         </li>
         <li>
-          <a class="info__buttons_item disabled" href="#">
+          <a class="info__buttons_item" title="Desafio Anterior (24)" href="../24">
             <i class="far fa-caret-square-left"></i>
           </a>
         </li>
         <li>
-          <a class="info__buttons_item" title="Próximo Desafio (02)" href="../02">
+          <a class="info__buttons_item" title="Próximo Desafio (26)" href="../26">
             <i class="far fa-caret-square-right"></i>
           </a>
         </li>
       </ul>
+
+      <table class="table__container">
+        <thead>
+          <tr>
+            <th>Signos</th>
+            <th>Período</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Áries</td>
+            <td>de 21/03 a 20/04</td>
+          </tr>
+          <tr>
+            <td>Touro</td>
+            <td>de 21/04 a 20/05</td>
+          </tr>
+          <tr>
+            <td>Gêmeos</td>
+            <td>de 21/05 a 20/06</td>
+          </tr>
+          <tr>
+            <td>Câncer</td>
+            <td>de 21/06 a 22/07</td>
+          </tr>
+          <tr>
+            <td>Leão</td>
+            <td>de 23/07 a 22/08</td>
+          </tr>
+          <tr>
+            <td>Virgem</td>
+            <td>de 23/08 a 22/09</td>
+          </tr>
+          <tr>
+            <td>Libra</td>
+            <td>de 23/09 a 22/10</td>
+          </tr>
+          <tr>
+            <td>Escorpião</td>
+            <td>de 23/10 a 21/11</td>
+          </tr>
+          <tr>
+            <td>Sagitário</td>
+            <td>de 22/11 a 21/12</td>
+          </tr>
+          <tr>
+            <td>Capricórnio</td>
+            <td>de 22/12 a 20/01</td>
+          </tr>
+          <tr>
+            <td>Aquário</td>
+            <td>de 21/01 a 18/02</td>
+          </tr>
+          <tr>
+            <td>Peixes</td>
+            <td>de 19/02 a 20/03</td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="examples__container">
         <input type="checkbox" id="example-checkbox">
@@ -114,14 +170,11 @@
           <div class="example">
             <div class="example__inputs">
               <h2>Entrada</h2>
-              <p>Largura do terreno: 10.0 </p>
-              <p>Comprimento do terreno: 30.0</p>
-              <p>Valor do metro quadrado: 200.00</p>
+              <p>Data de Nascimento: 29/03</p>
             </div>
             <div class="example__outputs">
               <h2>Saída</h2>
-              <p>Área do terreno = 300.00</p>
-              <p>Preço do terreno = 60000.00</p>
+              <p>Signo: Áries</p>
             </div>
           </div>
         </div>
@@ -131,17 +184,10 @@
     <form id="form-container">
       <ul class="form__container">
         <li>
-          <label>Largura do terreno em metros</label>
-          <input type="number" id="landWidth" placeholder="Ex: 10.0" />
+          <label>Data de nascimento (DIA/MÊS)</label>
+          <input type="text" id="bornDate" placeholder="Ex: 29/03" />
         </li>
-        <li>
-          <label>Comprimento do terreno em metros</label>
-          <input type="number" id="landLength" placeholder="Ex: 30.0" />
-        </li>
-        <li>
-          <label>Valor do metro quadrado (m²)</label>
-          <input type="number" id="squareMeterPrice" placeholder="Ex: 200.0" />
-        </li>
+
         <li>
           <input type="submit" value="Enviar" id="send-button" class="disabled" />
         </li>
@@ -149,7 +195,7 @@
     </form>
 
     <section id="result" class="result__container">
-      
+
     </section>
   </main>
 

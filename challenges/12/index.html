@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Titulo e Favicons -->
-  <title>Nivelamento Jovens Tegranos | Desafio 01</title>
+  <title>Nivelamento Jovens Tegranos | Desafio 12</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
@@ -79,15 +79,11 @@
 
   <main class="container">
     <section id="info-container">
-      <h2>Desafio 01</h2>
-      <h1>Terreno</h1>
-      <p>
-        Fazer um programa para ler as medidas da largura e comprimento de um
-        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa
-        deve mostrar o valor da área do terreno, bem como o valor do preço do
-        terreno, ambos com duas casas decimais, conforme exemplo.
-      </p>
+      <h2>Desafio 12</h2>
+      <h1>Bhaskara</h1>
+      <p>Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula de Bhaskara,
+        calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, conforme exemplos. Se a
+        equação não possuir raízes reais, mostrar uma mensagem.</p>
 
       <ul class="info__buttons">
         <li>
@@ -96,12 +92,12 @@
           </a>
         </li>
         <li>
-          <a class="info__buttons_item disabled" href="#">
+          <a class="info__buttons_item" title="Desafio Anterior (11)" href="../11">
             <i class="far fa-caret-square-left"></i>
           </a>
         </li>
         <li>
-          <a class="info__buttons_item" title="Próximo Desafio (02)" href="../02">
+          <a class="info__buttons_item" title="Próximo Desafio (13)" href="../13">
             <i class="far fa-caret-square-right"></i>
           </a>
         </li>
@@ -114,14 +110,39 @@
           <div class="example">
             <div class="example__inputs">
               <h2>Entrada</h2>
-              <p>Largura do terreno: 10.0 </p>
-              <p>Comprimento do terreno: 30.0</p>
-              <p>Valor do metro quadrado: 200.00</p>
+              <p>Coeficiente a: 1</p>
+              <p>Coeficiente b: 0</p>
+              <p>Coeficiente c: -9</p>
             </div>
             <div class="example__outputs">
               <h2>Saída</h2>
-              <p>Área do terreno = 300.00</p>
-              <p>Preço do terreno = 60000.00</p>
+              <p>X1 = 3.0000</p>
+              <p>X2 = -3.0000</p>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example__inputs">
+              <h2>Entrada</h2>
+              <p>Coeficiente a: 2</p>
+              <p>Coeficiente b: -4.5</p>
+              <p>Coeficiente c: 1.7</p>
+            </div>
+            <div class="example__outputs">
+              <h2>Saída</h2>
+              <p>X1 = 1.7697</p>
+              <p>X2 = 0.4803</p>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example__inputs">
+              <h2>Entrada</h2>
+              <p>Coeficiente a: 1</p>
+              <p>Coeficiente b: 3</p>
+              <p>Coeficiente c: 4</p>
+            </div>
+            <div class="example__outputs">
+              <h2>Saída</h2>
+              <p>Esta equação não possui raízes reais</p>
             </div>
           </div>
         </div>
@@ -131,17 +152,18 @@
     <form id="form-container">
       <ul class="form__container">
         <li>
-          <label>Largura do terreno em metros</label>
-          <input type="number" id="landWidth" placeholder="Ex: 10.0" />
+          <label>Coeficiente A</label>
+          <input type="number" id="coefficientA" placeholder="Ex: 1" />
         </li>
         <li>
-          <label>Comprimento do terreno em metros</label>
-          <input type="number" id="landLength" placeholder="Ex: 30.0" />
+          <lBbel>Coeficiente B</lBbel>
+          <input type="number" id="coefficientB" placeholder="Ex: 0" />
         </li>
         <li>
-          <label>Valor do metro quadrado (m²)</label>
-          <input type="number" id="squareMeterPrice" placeholder="Ex: 200.0" />
+          <label>Coeficiente C</label>
+          <input type="number" id="coefficientC" placeholder="Ex: -9" />
         </li>
+
         <li>
           <input type="submit" value="Enviar" id="send-button" class="disabled" />
         </li>
@@ -149,7 +171,7 @@
     </form>
 
     <section id="result" class="result__container">
-      
+
     </section>
   </main>
 

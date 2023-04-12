@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Titulo e Favicons -->
-  <title>Nivelamento Jovens Tegranos | Desafio 01</title>
+  <title>Nivelamento Jovens Tegranos | Desafio 04</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
@@ -79,14 +79,13 @@
 
   <main class="container">
     <section id="info-container">
-      <h2>Desafio 01</h2>
-      <h1>Terreno</h1>
+      <h2>Desafio 04</h2>
+      <h1>Troco</h1>
       <p>
-        Fazer um programa para ler as medidas da largura e comprimento de um
-        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa
-        deve mostrar o valor da área do terreno, bem como o valor do preço do
-        terreno, ambos com duas casas decimais, conforme exemplo.
+        Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia. O programa deve
+        ler o preço unitário do produto, a quantidade de unidades compradas deste produto, e o valor em dinheiro dado
+        pelo cliente (suponha que haja dinheiro suficiente). Seu programa deve mostrar o valor do troco a ser devolvido
+        ao cliente.
       </p>
 
       <ul class="info__buttons">
@@ -96,12 +95,12 @@
           </a>
         </li>
         <li>
-          <a class="info__buttons_item disabled" href="#">
+          <a class="info__buttons_item" title="Desafio Anterior (03)" href="../03">
             <i class="far fa-caret-square-left"></i>
           </a>
         </li>
         <li>
-          <a class="info__buttons_item" title="Próximo Desafio (02)" href="../02">
+          <a class="info__buttons_item" title="Próximo Desafio (05)" href="../05">
             <i class="far fa-caret-square-right"></i>
           </a>
         </li>
@@ -114,14 +113,13 @@
           <div class="example">
             <div class="example__inputs">
               <h2>Entrada</h2>
-              <p>Largura do terreno: 10.0 </p>
-              <p>Comprimento do terreno: 30.0</p>
-              <p>Valor do metro quadrado: 200.00</p>
+              <p>Preço unitário do produto: 8.00</p>
+              <p>Quantidade comprada: 2</p>
+              <p>Dinheiro recebido: 20.00</p>
             </div>
             <div class="example__outputs">
               <h2>Saída</h2>
-              <p>Área do terreno = 300.00</p>
-              <p>Preço do terreno = 60000.00</p>
+              <p>Troco = 4.00</p>
             </div>
           </div>
         </div>
@@ -131,17 +129,18 @@
     <form id="form-container">
       <ul class="form__container">
         <li>
-          <label>Largura do terreno em metros</label>
-          <input type="number" id="landWidth" placeholder="Ex: 10.0" />
+          <label>Preço unitário do produto</label>
+          <input type="number" id="unitPrice" placeholder="Ex: 8.00" />
         </li>
         <li>
-          <label>Comprimento do terreno em metros</label>
-          <input type="number" id="landLength" placeholder="Ex: 30.0" />
+          <label>Quantidade comprada</label>
+          <input type="number" id="quantity" placeholder="Ex: 2" />
         </li>
         <li>
-          <label>Valor do metro quadrado (m²)</label>
-          <input type="number" id="squareMeterPrice" placeholder="Ex: 200.0" />
+          <label>Dinheiro recebido</label>
+          <input type="number" id="amountPaid" placeholder="Ex: 20.00" />
         </li>
+  
         <li>
           <input type="submit" value="Enviar" id="send-button" class="disabled" />
         </li>
@@ -149,7 +148,7 @@
     </form>
 
     <section id="result" class="result__container">
-      
+
     </section>
   </main>
 

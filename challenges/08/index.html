@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Titulo e Favicons -->
-  <title>Nivelamento Jovens Tegranos | Desafio 01</title>
+  <title>Nivelamento Jovens Tegranos | Desafio 08</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
@@ -79,15 +79,12 @@
 
   <main class="container">
     <section id="info-container">
-      <h2>Desafio 01</h2>
-      <h1>Terreno</h1>
-      <p>
-        Fazer um programa para ler as medidas da largura e comprimento de um
-        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa
-        deve mostrar o valor da área do terreno, bem como o valor do preço do
-        terreno, ambos com duas casas decimais, conforme exemplo.
-      </p>
+      <h2>Desafio 08</h2>
+      <h1>Áreas Geométricas</h1>
+      <p>Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e mostrar (imprimir os dados com quatro casas decimais):</p>
+      <p>a) a área do quadrado que tem lado A</p>
+      <p>b) a área do triângulo retângulo que base A e altura B</p>
+      <p>c) a área do trapézio que tem bases A e B, e altura C</p>
 
       <ul class="info__buttons">
         <li>
@@ -96,12 +93,12 @@
           </a>
         </li>
         <li>
-          <a class="info__buttons_item disabled" href="#">
+          <a class="info__buttons_item" title="Desafio Anterior (07)" href="../07">
             <i class="far fa-caret-square-left"></i>
           </a>
         </li>
         <li>
-          <a class="info__buttons_item" title="Próximo Desafio (02)" href="../02">
+          <a class="info__buttons_item" title="Próximo Desafio (09)" href="../09">
             <i class="far fa-caret-square-right"></i>
           </a>
         </li>
@@ -114,14 +111,15 @@
           <div class="example">
             <div class="example__inputs">
               <h2>Entrada</h2>
-              <p>Largura do terreno: 10.0 </p>
-              <p>Comprimento do terreno: 30.0</p>
-              <p>Valor do metro quadrado: 200.00</p>
+              <p>Digite a medida A: 4.0</p>
+              <p>Digite a medida B: 3.5</p>
+              <p>Digite a medida C: 5.2</p>
             </div>
             <div class="example__outputs">
               <h2>Saída</h2>
-              <p>Área do terreno = 300.00</p>
-              <p>Preço do terreno = 60000.00</p>
+              <p>Área do quadrado = 16.0000</p>
+              <p>Área do triângulo = 7.0000</p>
+              <p>Área do trapézio = 19.5000</p>
             </div>
           </div>
         </div>
@@ -131,17 +129,18 @@
     <form id="form-container">
       <ul class="form__container">
         <li>
-          <label>Largura do terreno em metros</label>
-          <input type="number" id="landWidth" placeholder="Ex: 10.0" />
+          <label>Medida A</label>
+          <input type="number" id="measureA" placeholder="Ex: 4.0" />
         </li>
         <li>
-          <label>Comprimento do terreno em metros</label>
-          <input type="number" id="landLength" placeholder="Ex: 30.0" />
+          <label>Medida B</label>
+          <input type="number" id="measureB" placeholder="Ex: 3.5" />
         </li>
         <li>
-          <label>Valor do metro quadrado (m²)</label>
-          <input type="number" id="squareMeterPrice" placeholder="Ex: 200.0" />
+          <label>Medida C</label>
+          <input type="number" id="measureC" placeholder="Ex: 5.2" />
         </li>
+        
         <li>
           <input type="submit" value="Enviar" id="send-button" class="disabled" />
         </li>
@@ -149,7 +148,7 @@
     </form>
 
     <section id="result" class="result__container">
-      
+
     </section>
   </main>
 

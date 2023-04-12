@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Titulo e Favicons -->
-  <title>Nivelamento Jovens Tegranos | Desafio 01</title>
+  <title>Nivelamento Jovens Tegranos | Desafio 16</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
@@ -79,14 +79,10 @@
 
   <main class="container">
     <section id="info-container">
-      <h2>Desafio 01</h2>
-      <h1>Terreno</h1>
+      <h2>Desafio 16</h2>
+      <h1>Arremesso de dardo</h1>
       <p>
-        Fazer um programa para ler as medidas da largura e comprimento de um
-        terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
-        Em seguida, o programa
-        deve mostrar o valor da área do terreno, bem como o valor do preço do
-        terreno, ambos com duas casas decimais, conforme exemplo.
+        No arremesso de dardo, o atleta tem três chances para lançar o dardo à maior distância que conseguir. Você deve criar um programa para, dadas as medidas das três tentativas de lançamento, informar qual foi a maior.
       </p>
 
       <ul class="info__buttons">
@@ -96,12 +92,12 @@
           </a>
         </li>
         <li>
-          <a class="info__buttons_item disabled" href="#">
+          <a class="info__buttons_item" title="Desafio Anterior (15)" href="../15">
             <i class="far fa-caret-square-left"></i>
           </a>
         </li>
         <li>
-          <a class="info__buttons_item" title="Próximo Desafio (02)" href="../02">
+          <a class="info__buttons_item" title="Próximo Desafio (17)" href="../17">
             <i class="far fa-caret-square-right"></i>
           </a>
         </li>
@@ -114,14 +110,13 @@
           <div class="example">
             <div class="example__inputs">
               <h2>Entrada</h2>
-              <p>Largura do terreno: 10.0 </p>
-              <p>Comprimento do terreno: 30.0</p>
-              <p>Valor do metro quadrado: 200.00</p>
+              <p>Primeira distância: 83.21</p>
+              <p>Segunda distância: 79.53</p>
+              <p>Terceira distância: 89.15</p>
             </div>
             <div class="example__outputs">
               <h2>Saída</h2>
-              <p>Área do terreno = 300.00</p>
-              <p>Preço do terreno = 60000.00</p>
+              <p>Maior distância = 89.15</p>
             </div>
           </div>
         </div>
@@ -131,17 +126,18 @@
     <form id="form-container">
       <ul class="form__container">
         <li>
-          <label>Largura do terreno em metros</label>
-          <input type="number" id="landWidth" placeholder="Ex: 10.0" />
+          <label>Primeira distância</label>
+          <input type="number" id="firstDistance" placeholder="Ex: 83.21" />
         </li>
         <li>
-          <label>Comprimento do terreno em metros</label>
-          <input type="number" id="landLength" placeholder="Ex: 30.0" />
+          <label>Segunda distância</label>
+          <input type="number" id="secondDistance" placeholder="Ex: 79.53" />
         </li>
         <li>
-          <label>Valor do metro quadrado (m²)</label>
-          <input type="number" id="squareMeterPrice" placeholder="Ex: 200.0" />
+          <label>Terceira distância</label>
+          <input type="number" id="thirdDistance" placeholder="Ex: 89.15" />
         </li>
+
         <li>
           <input type="submit" value="Enviar" id="send-button" class="disabled" />
         </li>
@@ -149,7 +145,7 @@
     </form>
 
     <section id="result" class="result__container">
-      
+
     </section>
   </main>
 

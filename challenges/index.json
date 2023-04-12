@@ -3,5 +3,150 @@
     "id": "01",
     "title": "Terreno",
     "description": "Calcula a área do terreno e apresenta o preço correspondente"
+  },
+  {
+    "id": "02",
+    "title": "Retângulo",
+    "description": "Calcula o valor da área, perímetro e diagonal de um retângulo"
+  },
+  {
+    "id": "03",
+    "title": "Idade Média",
+    "description": "Calcula a idade média entre duas pessoas"
+  },
+  {
+    "id": "04",
+    "title": "Troco",
+    "description": "Calcula o valor do troco de um compra"
+  },
+  {
+    "id": "05",
+    "title": "Círculo",
+    "description": "Calcula a área de um círculo"
+  },
+  {
+    "id": "06",
+    "title": "Pagamento",
+    "description": "Calcula o pagamento de um funcionário por suas horas trabalhadas"
+  },
+  {
+    "id": "07",
+    "title": "Carro",
+    "description": "Calcula o consumo médio de um carro"
+  },
+  {
+    "id": "08",
+    "title": "Áreas Geométricas",
+    "description": "Calcula as áreas do quadrado, triângulo e trapézio"
+  },
+  {
+    "id": "09",
+    "title": "Segundos",
+    "description": "Formata os segundo em - horas:minutos:segundos"
+  },
+  {
+    "id": "10",
+    "title": "Menor Valor",
+    "description": "Seleciona o menor valor dentre três numeros"
+  },
+  {
+    "id": "11",
+    "title": "Nota final",
+    "description": "Calcula a nota final e informa se o aluno foi reprovado"
+  },
+  {
+    "id": "12",
+    "title": "Bhaskara",
+    "description": "Resolve uma equação do segundo grau usando a fórmula de Bhaskara"
+  },
+  {
+    "id": "13",
+    "title": "Telefonia",
+    "description": "Calcula quantidade de minutos que uma pessoa consumiu e o valor a ser pago."
+  },
+  {
+    "id": "14",
+    "title": "Troco Insuficiente",
+    "description": "Calcula o valor do troco de um compra e infoma caso o valor seja insuficiente"
+  },
+  {
+    "id": "15",
+    "title": "Glicose",
+    "description": "Clasifica o valor da glicose"
+  },
+  {
+    "id": "16",
+    "title": "Arremesso de dardo",
+    "description": "Seleciona o maior valor dentre três lançamentos"
+  },
+  {
+    "id": "17",
+    "title": "Múltiplos",
+    "description": "Informa se os valores são multiplos ou não"
+  },
+  {
+    "id": "18",
+    "title": "Temperatura",
+    "description": "Converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa."
+  },
+  {
+    "id": "19",
+    "title": "Aumento",
+    "description": "Calcula o aumento de salário dos funcionários."
+  },
+  {
+    "id": "20",
+    "title": "Intervalo de números",
+    "description": "Faz a soma total dentre um intervalo de números."
+  },
+  {
+    "id": "21",
+    "title": "Números pares",
+    "description": "Exibe todos os números pares até um número especifico"
+  },
+  {
+    "id": "22",
+    "title": "Tabuada",
+    "description": "Exibe a tabuada do 1 até o 10 de um número especifico"
+  },
+  {
+    "id": "23",
+    "title": "Soma dos ímpares",
+    "description": "Soma todos os números pares durante um intervalo especifico"
+  },
+  {
+    "id": "24",
+    "title": "Ordem crescente",
+    "description": "Ordena 5 número em ordem crescente"
+  },
+  {
+    "id": "25",
+    "title": "Signo",
+    "description": "Determina um signo pela data de nascimento"
+  },
+  {
+    "id": "26",
+    "title": "Consoantes e vogais",
+    "description": "Calcula a quantidade de vogais e consoantes da uma palavra"
+  },
+  {
+    "id": "27",
+    "title": "Palíndromo",
+    "description": "Verifica se a palavra ou número é um palíndromo"
+  },
+  {
+    "id": "28",
+    "title": "Menor e maior",
+    "description": "Dentre 5 número exibe o maior e o menor"
+  },
+  {
+    "id": "29",
+    "title": "Valida CNPJ",
+    "description": "Verifica se o CNPJ é válido ou não"
+  },
+  {
+    "id": "30",
+    "title": "Por extenso",
+    "description": "Transcreve um número por extenso"
   }
 ]
