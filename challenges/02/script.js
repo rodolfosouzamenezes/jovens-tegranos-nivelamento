@@ -29,12 +29,13 @@ sendButton.addEventListener('click', function (event) {
 
   // Calculando a diagonal do retângulo
   let baseSquared = Math.pow(rectangleBase, 2);
-  let heightSquared = Math.pow(rectangleBase, 2);
+  let heightSquared = Math.pow(rectangleHeight, 2);
 
+  console.log(baseSquared, heightSquared);
   // Teorema de Pitágoras para calcular a diagonal
   // O valor do quadrado da hipotenusa é igual a soma dos quadrados de seus catetos
   // O "sqrt" é a função matemática para calcular a raiz quadrada.
-  let diagonal = (Math.sqrt(baseSquared + heightSquared)).toFixed(4);
+  let diagonal = Math.sqrt(baseSquared + heightSquared).toFixed(4);
 
   const resultHTML = `
     <h2>RESULTADO</h2>
